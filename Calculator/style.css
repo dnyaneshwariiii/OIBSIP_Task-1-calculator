@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background:black;
+
+}
+.calculator{
+    width:400px ;
+    padding: 50px 30px;
+    margin-top: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius:  12px; 
+    
+
+}
+  .heading {
+    text-align: center;
+    margin-top: 20px;
+    font-family: ui-rounded;
+    font-size: xxx-large;
+  }
+
+  .display {
+    width: 100%;
+    border-color: black;
+  }
+
+  .display input{
+    border-color: black;
+    width: 100%;
+    border-radius:12px;
+    background:white;
+    font-size:30px ;
+    padding: 13px 10px;
+    color: black;
+    text-align: right
+    
+}
+.display input::placeholder {
+    color: black;
+}
+
+.buttons{
+    display:grid ;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-gap:20px;
+    margin-top: 40px;
+
+}
+
+.buttons input[type="button"] {
+    
+    padding: 17px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color:black;
+    cursor: pointer;
+
+    
+}
+.buttons input[type="button"]:hover{
+    box-shadow: 0 8px 25px #13338c;
+    border:0.1px solid white;
+
+}
+input[type="button"]#equal {
+    grid-row: span 2;
+    background-color: orangered ;
+}
+
+input[type="button"][value="0"]{
+    grid-column: span 2;
+    
+}
+input[type="button"][value="AC"]{
+    color: orangered;
+}
+
+input[type="button"][value="DEL"]{
+    color: orangered;
+}
+input[type="button"][value="*"]{
+   color: orangered;
+}
+input[type="button"][value="+"]{
+    color: orangered;
+}
+input[type="button"][value="-"]{
+    color: orangered;
+}
+input[type="button"][value="/"]{
+    color: orangered;
+}
+
+
+
+
+
+
+
+
